@@ -1,8 +1,10 @@
 from dataclasses import dataclass
 
+from lineup.core.utilities import Serializable
+
 
 @dataclass
-class User:
+class User(Serializable):
     id: int
     email: str
     first_name: str
