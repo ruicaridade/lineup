@@ -10,6 +10,8 @@ I've given myself a few hours to build this out -- there's a lot of things I wou
 
 - Moving some bits in the frontend into their own components, such as extracting a re-usable "Table" component, instead of having all the fields and such hardcoded.
 
+- Pagination on the frontend. As the user table wasn't necessarily part of the exercise, I've left out table pagination so I don't waste too much time going on tangents.
+
 # Requirements
 
 - Docker
