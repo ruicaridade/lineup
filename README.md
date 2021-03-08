@@ -30,6 +30,8 @@ I've given myself a few hours to build this out -- there's a lot of things I wou
 docker-compose up -d
 ```
 
+The frontend will be accessible on `http://localhost:5000` and the backend on `http://localhost:8000`.
+
 # Setup
 
 ## Frontend
