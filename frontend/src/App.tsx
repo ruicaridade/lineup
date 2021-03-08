@@ -1,16 +1,21 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
+import UserDetails from "./routes/UserDetails";
+import Users from "./routes/Users";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/users/:id">
+          <UserDetails />
+        </Route>
         <Route path="/users">
-          <h1>Users</h1>
+          <Users />
         </Route>
         <Route path="/">
-          <h1>Index</h1>
+          <Redirect to="/users" />
         </Route>
       </Switch>
     </BrowserRouter>
