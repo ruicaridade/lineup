@@ -25,7 +25,7 @@ const Users = () => {
       .then((data) => {
         setUsers(data.items.map((item: object) => item as User)); // Dangerous.
       });
-  }, [users]);
+  }, []);
 
   return (
     <div className="flex justify-center">

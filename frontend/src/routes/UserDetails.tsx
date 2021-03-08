@@ -20,7 +20,7 @@ const UserDetails = (props: Props) => {
           setUser(data as User); // Dangerous.
         });
     }
-  }, [user, id]);
+  }, [id]);
 
   return (
     <div className="flex justify-center mt-32">
