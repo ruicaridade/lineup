@@ -6,19 +6,21 @@ import Users from "./routes/Users";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/users/:id">
-          <UserDetails />
-        </Route>
-        <Route path="/users">
-          <Users />
-        </Route>
-        <Route path="/">
-          <Redirect to="/users" />
-        </Route>
-      </Switch>
-    </BrowserRouter>
+    <div className="container mx-auto">
+      <BrowserRouter>
+        <Switch>
+          <Route path="/users/:id">
+            <UserDetails />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Redirect to="/users" />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 
